@@ -8,7 +8,7 @@ if grau == 1:
         b = float(input())
         resul1 = -b / a
         print(f"{resul1:.2f}")
-if grau == 2:
+elif grau == 2:
     a = float(input())
     if a != 0:
         b = float(input())
@@ -23,10 +23,7 @@ if grau == 2:
         elif resul2 > 0:
             x1 = -b + resul2**(0.5) / 2*a
             x2 = -b - resul2**(0.5) / 2*a
-            print(f"{x1:.2f} e {x2:.2f}")
+            print(f"{x1:.2f} e {x2:.2f}") 
 
-        
-
-
-
-        
+else:
+    print("Grau inválido")     
