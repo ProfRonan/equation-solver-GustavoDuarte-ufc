@@ -1,7 +1,7 @@
 grau = float(input())
 
 if grau == 1:
-    
+    a = float(input())
     if a == 0:
         print('Valor de a inválido')
     else:
