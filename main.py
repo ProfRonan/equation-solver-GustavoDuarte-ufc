@@ -47,8 +47,7 @@ elif grau == 2:
             x2 = -b - resul2**(0.5) / 2 * a
 
             if c == 0 and b != 0 and a != 0:
-                print("A equação é do segundo grau")
-                print("A equação possui duas raíses reais")
+                
                 x1 = 0
                 x2 = -b / a
                 if x1 < x2:
@@ -57,9 +56,8 @@ elif grau == 2:
                     print(f"{x2:.2f} e {x1:.2f}")
         
             elif a != 0 and c != 0 and b == 0:
-                print("A equação é do segundo grau")
-                print("A equação possui duas raíses reais")
-                calc = (-b / a)
+            
+                calc = -c / a
                 x1 = -calc**(0.5)
                 x2 = calc**(0.5)
                 if x1 < x2:
