@@ -22,15 +22,22 @@ elif grau == 2:
         c = float(input())
         resul2 = b*b - 4*a*c
         if resul2 < 0:
+            print("A equação é do segundo grau")
             print("A equação não possui raízes reais")
         elif resul2 == 0:
+            print("A equação é do segundo grau")
             print("A equação possui apenas uma raiz real")
             resul3 = -b / 2*a
             print(f"{resul3:.2f}")
         elif resul2 > 0:
             x1 = -b + resul2**(0.5) / 2*a
             x2 = -b - resul2**(0.5) / 2*a
-            print(f"{x1:.2f} e {x2:.2f}") 
-
+            if x1 < x2:
+                print(f"{x1:.2f} e {x2:.2f}")
+            else:
+                 print(f"{x2:.2f} e {x1:.2f}")
+    else:
+        print("A equação é do segundo grau")
+        print("Valor de a inválido")
 else:
     print("Grau inválido")     
