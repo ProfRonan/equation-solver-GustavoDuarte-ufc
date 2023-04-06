@@ -3,11 +3,18 @@ grau = float(input())
 if grau == 1:
     a = float(input())
     if a == 0:
+        print("A equação é do primeiro grau")
         print('Valor de a inválido')
     else:
         b = float(input())
-        resul1 = -b / a
-        print(f"{resul1:.2f}")
+        if b == 0:
+            resul1 = 0
+            print("A equação é do primeiro grau")
+            print(f"{resul1:.2f}")
+        else:
+            resul1 = float(-b / a)
+            print("A equação é do primeiro grau")
+            print(f"{resul1:.2f}")
 elif grau == 2:
     a = float(input())
     if a != 0:
