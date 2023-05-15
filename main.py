@@ -37,7 +37,7 @@ elif grau == 2:
         if resul2 < 0:
             print("A equação não possui raízes reais")
         elif resul2 == 0:
-            print("A equação possui apenas uma raiz real")
+            print("A equação possui uma raiz real")
             if b == 0 or a == 0:
                 x1 = 0
                 print(f"{x1:.2f}")
