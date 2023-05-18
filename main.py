@@ -25,7 +25,6 @@ elif grau == 2:
     if a == 0:
         print("Valor de a inválido")
     elif a != 0:
-        print("A equação é do segundo grau")
         b = float(input())
         c = float(input())
         resul2 = b*b - 4*a*c
@@ -43,8 +42,6 @@ elif grau == 2:
 
         elif resul2 > 0:
             print("A equação possui duas raízes reais")
-            x1 = -b + resul2**(0.5) / 2 * a
-            x2 = -b - resul2**(0.5) / 2 * a
 
             if c == 0 and b != 0 and a != 0:
                 
@@ -60,6 +57,15 @@ elif grau == 2:
                 calc = -c / a
                 x1 = -calc**(0.5)
                 x2 = calc**(0.5)
+                if x1 < x2:
+                    print(f"{x1:.2f} e {x2:.2f}")
+                else:
+                    print(f"{x2:.2f} e {x1:.2f}")
+            else:    
+                wi = -b + resul2**(0.5)
+                wi1 = -b - resul2**(0.5)
+                x1 = wi / 2 * a
+                x2 = wi1 / 2 * a
                 if x1 < x2:
                     print(f"{x1:.2f} e {x2:.2f}")
                 else:
