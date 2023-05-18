@@ -2,31 +2,27 @@ grau = float(input())
 
 #Equação do primeiro grau
 if grau == 1:
-
+    print("A equação é do primeiro grau")
     a = float(input())
 
     if a == 0:
-        print("A equação é do primeiro grau")
         print('Valor de a inválido')
     else:
         b = float(input())
         
         if b == 0:
             resul1 = 0
-            print("A equação é do primeiro grau")
-            print(f"{resul1:.2f}")
+            print("A equação é do primeiro grau",f"{resul1:.2f}")
         else:
             resul1 = float(-b / a)
-            print("A equação é do primeiro grau")
-            print(f"{resul1:.2f}")
+            print("A equação é do primeiro grau",f"{resul1:.2f}")
 
 #Equação do segundo grau
 elif grau == 2:
-
+    print("A equação é do segundo grau")
     a = float(input())
 
     if a == 0:
-        print("A equação é do segundo grau")
         print("Valor de a inválido")
     elif a != 0:
         print("A equação é do segundo grau")
